@@ -50,7 +50,7 @@ Telephone:
 </td>
 </tr>
 <tr><td>
-NÂ° CIN: 
+N° CIN: 
 </td><td>
 <input type="text" name="cin" />
 </td></tr>
