@@ -1,0 +1,41 @@
+/* CSS Document */
+
+input[type='text'], input[type='password'], input[type='email'], input[type='file'], select, input[type='date'] {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: 1px solid #bbb;
+height: 30px;
+width: 70%;/*
+color: #ccc;*/
+color:#000;
+-webkit-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+-moz-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+text-indent: 10px;
+background-position: 10px 6px;
+float: left;
+/*margin: 11 3.5% 0 3.5%;*/
+        }
+
+input[type='text']:focus, input[type='password']:focus, input[type='email']:focus, input[type='file']:focus, select:focus, input[type='date'] {
+outline: none;
+border: 1px solid #77BACE;
+-webkit-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+-moz-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+color: #666666;
+}
+input [type='submit'], input[type='reset']
+{
+background:url(../image/button.gif)) ;
+display:block;
+	color:#555555;
+	font-weight:bold;
+	height:30px;
+	line-height:29px;
+	margin-bottom:14px;
+	text-decoration:none;
+	width:150px;
+	cursor:hand;
+}
