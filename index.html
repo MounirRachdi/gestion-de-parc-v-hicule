@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Login PHP</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="jquery-1.7.min.js"></script>
+	<script type="text/javascript">
+	/*
+	$(document).ready(function(){
+		$("#login").click(function(){
+			
+			var action = $("#lg-form").attr('action');
+			var form_data = {
+				username: $("#username").val(),
+				password: $("#password").val(),
+				is_ajax: 1
+			};
+			
+			$.ajax({
+				type: "POST",
+				url: action,
+				data: form_data,
+				success: function(response)
+				{
+					if(response == "success")
+						$("#lg-form").slideUp('slow', function(){
+							$("#message").html('<p class="success">You have logged in successfully!</p><p>Redirecting....</p>');
+						});
+					else
+						$("#message").html('<p class="error">ERROR: Invalid username and/or password.</p>');
+				}	
+			});
+			return false;
+		});
+	});*/
+	</script>
+    <style type="text/css">
+<!--
+.Style1 {color: #FF0000}
+-->
+    </style>
+</head>
+<body>
+<center>
+<h1 class="Style1" > Gestion du parc Vehicules DMM</h1>
+</center>
+	<div class="lg-container">
+		<h2> Espace administrateur</h2>
+		<form action="login.php" id="lg-form" name="lg-form" method="post">
+			
+			<div>
+				<label for="username">Login</label>
+				<input type="text" name="login" id="username" placeholder="login"/>
+			</div>
+			
+			<div>
+				<label for="password">Password:</label>
+				<input type="password" name="pass" id="password" placeholder="mot de passe" />
+			</div>
+			
+			<div>				
+				<button type="submit" id="login">Connecter</button>
+			</div>
+			
+		</form>
+		<div id="message"></div>
+	</div>
+</body>
+</html>
